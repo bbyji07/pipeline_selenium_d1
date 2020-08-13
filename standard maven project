@@ -5,10 +5,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Selenium {
 
    public static void main(String[] args) {
-       System.setProperty("webdriver.chrome.driver","F:\\Jenkins\\workspace\\chromedriver.exe");	// <-- Change this path
+       System.setProperty("webdriver.chrome.driver","D:\\jenkinsnode\\workspace\\chromedriver.exe");	// <-- Change this path
        WebDriver driver = new ChromeDriver();
-       String baseUrl = "https://experitest.com/free-trial/";
-       String expectedTitle = "Free trial";
+       String baseUrl = "http://spinebiz.net/readytestgo/";
+       String expectedTitle = "ReadyTestGo trial";
        String actualTitle = "";
        driver.get(baseUrl);
        actualTitle = driver.getTitle();
